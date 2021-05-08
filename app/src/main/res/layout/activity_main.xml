@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".MainActivity">
+
+    <cn.zhaiyifan.rememberedittext.RememberEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="150dp"
+        android:hint="Username"
+        android:inputType="text"
+        app:autoFill="true"
+        app:autoSave="true"
+        app:rememberCount="3"
+        app:rememberId="username"></cn.zhaiyifan.rememberedittext.RememberEditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnClear"
+        android:text="Clear"></Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNext"
+        android:layout_above="@id/btnClear"
+        android:text="Next"></Button>
+</RelativeLayout>
